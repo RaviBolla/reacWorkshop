@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Clock from './Clock';
 import * as serviceWorker from './serviceWorker';
 
 const salutation = "Ms";
@@ -24,11 +25,9 @@ class Hello extends React.Component {
     }
 }
 
-function tick() {
-    ReactDOM.render(<App />, document.getElementById('root'));
-}
 
-setInterval(tick, 1000);
+ReactDOM.render(<Clock />, document.getElementById('root'));
+
 
 
 // If you want your app to work offline and load faster, you can change

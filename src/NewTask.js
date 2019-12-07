@@ -1,8 +1,12 @@
 import React from "react";
 
-export default () => <div>
-    <input type="text" />
-    <button>Add ToDo</button>
-</div>
+const fun = (props) => {
+    return (<div>
+        <input id="todoNewItem" type="text" />
+        <button onClick={(e)=> props.addToDoHandler(
+            document.getElementById("todoNewItem").value)
+        }>Add</button>
+    </div>);
+};
 
-export const addition = (a, b) => a+b;
+export default fun;
